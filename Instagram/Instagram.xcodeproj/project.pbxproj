@@ -15,6 +15,7 @@
 		9A4B182C2040FCB1008A51B3 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B182B2040FCB1008A51B3 /* InstagramTests.swift */; };
 		9A4B18372040FCB1008A51B3 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B18362040FCB1008A51B3 /* InstagramUITests.swift */; };
 		9A8C71932041212400F60919 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8C71922041212400F60919 /* LoginViewController.swift */; };
+		9AAFCDA020493DB90027C171 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFCD9F20493DB90027C171 /* PostDetailViewController.swift */; };
 		9AB2F3652043D12400EED21D /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2F3642043D12400EED21D /* homePageViewController.swift */; };
 		9AB2F3672043D16300EED21D /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2F3662043D16300EED21D /* UploadPhotoViewController.swift */; };
 		9AB2F36B2043D44A00EED21D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2F36A2043D44A00EED21D /* PostCell.swift */; };
@@ -59,6 +60,7 @@
 		9A4B18362040FCB1008A51B3 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		9A4B18382040FCB1008A51B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8C71922041212400F60919 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9AAFCD9F20493DB90027C171 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		9AB2F3642043D12400EED21D /* homePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
 		9AB2F3662043D16300EED21D /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = "<group>"; };
 		9AB2F36A2043D44A00EED21D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				9A8C71922041212400F60919 /* LoginViewController.swift */,
 				9AB2F3642043D12400EED21D /* homePageViewController.swift */,
 				9AB2F3662043D16300EED21D /* UploadPhotoViewController.swift */,
+				9AAFCD9F20493DB90027C171 /* PostDetailViewController.swift */,
 			);
 			path = ViewCotrollers;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB2F3672043D16300EED21D /* UploadPhotoViewController.swift in Sources */,
+				9AAFCDA020493DB90027C171 /* PostDetailViewController.swift in Sources */,
 				9A8C71932041212400F60919 /* LoginViewController.swift in Sources */,
 				9A4B18172040FCB1008A51B3 /* AppDelegate.swift in Sources */,
 				9AB2F36D2043ED3400EED21D /* Post.swift in Sources */,

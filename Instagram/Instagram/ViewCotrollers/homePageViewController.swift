@@ -77,30 +77,52 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     @IBAction func onLogOutPress(_ sender: Any) {
-        //TODO: logout
+        NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! PostCell
         
-        //if let indexPath = PostTableView.indexPath(for: cell){
+        if let indexPath = PostTableView.indexPath(for: cell){
             
-            //let postIndexPath = posts[indexPath.row]
-            //let detailViewController = segue.destination as! PostDetailsViewController
+            let postIndexPath = posts[indexPath.row]
+            let detailViewController = segue.destination as! PostDetailViewController
             
-            //detailViewController.postImageFile = postIndexPath.media
-           // detailViewController.captionString = postIndexPath.caption
+            detailViewController.imageFile = postIndexPath.media
+            detailViewController.postCaption = postIndexPath.caption
             
-            //let df = DateFormatter()
-//            df.dateStyle = .short
-//            df.timeStyle = .short
-//            df.locale = Locale.current
-//            
-            //detailViewController.timeStampString = df.string(from: self.posts[(indexPath.section)].createdAt!)
-        //}
+            // retrieve date post was created
+            let df = DateFormatter()
+            df.dateStyle = .short
+            df.timeStyle = .short
+            df.locale = Locale.current
+            
+            detailViewController.postDate = df.string(from: self.posts[(indexPath.section)].createdAt!)
+            
+            do{
+                let user = try self.posts[(indexPath.section)].author.fetch()
+                detailViewController.userName = user.username
+            }
+            catch{
+                
+            }
+        }
+
+//            let user = try self.posts[(indexPath?.section)!].author.fetch()
+//            vc.userName = user.username
+//        }
+//        catch{
+//
+//        }
+//
+//        vc.postDate = df.string(from: self.posts[(indexPath?.section)!].createdAt!)
+//        print(self.posts[(indexPath?.section)!].media)
+//        vc.imageFile = self.posts[(indexPath?.section)!].media
+//        vc.postCaption = self.posts[(indexPath?.section)!].caption
+        
+        
     }
-    
     
 
     /*
